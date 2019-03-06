@@ -12,9 +12,13 @@ class JournalTableViewController: UITableViewController {
 
     
     let cellIdentity = "JournalEntryCell"
+    let showJournalSegueId = "showJournal"
+    let addJournalEntrySegueId = "createJournalEntry"
+    
+    let journal = Journal()
     
     //var sampleData = [String]()
-    var sampleData = (0..<100).map{"Cell \($0)"}
+    //var sampleData = (0..<100).map{"Cell \($0)"}
     
     //var sampleData = (0..<100).map({(index: Int) -> String in return "Cell \(index)"} )
     
@@ -25,8 +29,10 @@ class JournalTableViewController: UITableViewController {
 //            sampleData.append("Cell \(index)")
 //        }
         
-        let entry = JournalEntry(date: Date(),content:  "David" )
-        print(entry)
+        for index in 0..<3 {
+            let entry = JournalEntry(date: Date(),content:  "Entry \(index)" )
+            journal.add(entry: entry)
+        }
         
     }
 
@@ -39,13 +45,15 @@ class JournalTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return sampleData.count
+        return journal.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentity, for: indexPath)
         
-        cell.textLabel?.text = sampleData[indexPath.row]
+        if let entry = journal.entry(index: indexPath.row) {
+            cell.textLabel?.text = "\(entry)"
+        }
         
         return cell
         

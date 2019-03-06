@@ -15,6 +15,7 @@
 		635C1439222FC34100445FEE /* MAP18IOs_JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1438222FC34100445FEE /* MAP18IOs_JournalUITests.swift */; };
 		635C1447222FC58600445FEE /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1446222FC58600445FEE /* JournalTableViewController.swift */; };
 		635C1449222FCE2300445FEE /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1448222FCE2300445FEE /* JournalEntry.swift */; };
+		635C144B222FD7AA00445FEE /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C144A222FD7AA00445FEE /* Journal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		635C143A222FC34100445FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		635C1446222FC58600445FEE /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		635C1448222FCE2300445FEE /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		635C144A222FD7AA00445FEE /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				635C141C222FC34000445FEE /* Main.storyboard */,
 				635C1446222FC58600445FEE /* JournalTableViewController.swift */,
 				635C1448222FCE2300445FEE /* JournalEntry.swift */,
+				635C144A222FD7AA00445FEE /* Journal.swift */,
 				635C141F222FC34100445FEE /* Assets.xcassets */,
 				635C1421222FC34100445FEE /* LaunchScreen.storyboard */,
 				635C1424222FC34100445FEE /* Info.plist */,
@@ -262,6 +265,7 @@
 				635C1449222FCE2300445FEE /* JournalEntry.swift in Sources */,
 				635C1447222FC58600445FEE /* JournalTableViewController.swift in Sources */,
 				635C1419222FC34000445FEE /* AppDelegate.swift in Sources */,
+				635C144B222FD7AA00445FEE /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
