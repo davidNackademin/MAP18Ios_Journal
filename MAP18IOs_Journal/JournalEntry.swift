@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+class JournalEntry: CustomStringConvertible {
+    
+    
+    
+    var date: Date
+    var content: String
+    let dateFormater = DateFormatter()
+    
+    var description: String {
+        return dateFormater.string(from: date)
+    }
+    
+    init(date: Date, content: String) {
+        self.date = date
+        self.content = content
+        dateFormater.dateFormat = "yyyy-MM-dd"
+    }
+    
+}

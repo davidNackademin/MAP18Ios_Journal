@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		635C1419222FC34000445FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1418222FC34000445FEE /* AppDelegate.swift */; };
-		635C141B222FC34000445FEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C141A222FC34000445FEE /* ViewController.swift */; };
 		635C141E222FC34000445FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C141C222FC34000445FEE /* Main.storyboard */; };
 		635C1420222FC34100445FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C141F222FC34100445FEE /* Assets.xcassets */; };
 		635C1423222FC34100445FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C1421222FC34100445FEE /* LaunchScreen.storyboard */; };
 		635C142E222FC34100445FEE /* MAP18IOs_JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C142D222FC34100445FEE /* MAP18IOs_JournalTests.swift */; };
 		635C1439222FC34100445FEE /* MAP18IOs_JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1438222FC34100445FEE /* MAP18IOs_JournalUITests.swift */; };
+		635C1447222FC58600445FEE /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1446222FC58600445FEE /* JournalTableViewController.swift */; };
+		635C1449222FCE2300445FEE /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1448222FCE2300445FEE /* JournalEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		635C1415222FC34000445FEE /* MAP18IOs_Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAP18IOs_Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C1418222FC34000445FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		635C141A222FC34000445FEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		635C141D222FC34000445FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		635C141F222FC34100445FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635C1422222FC34100445FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		635C1434222FC34100445FEE /* MAP18IOs_JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAP18IOs_JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C1438222FC34100445FEE /* MAP18IOs_JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAP18IOs_JournalUITests.swift; sourceTree = "<group>"; };
 		635C143A222FC34100445FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635C1446222FC58600445FEE /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		635C1448222FCE2300445FEE /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				635C1418222FC34000445FEE /* AppDelegate.swift */,
-				635C141A222FC34000445FEE /* ViewController.swift */,
 				635C141C222FC34000445FEE /* Main.storyboard */,
+				635C1446222FC58600445FEE /* JournalTableViewController.swift */,
+				635C1448222FCE2300445FEE /* JournalEntry.swift */,
 				635C141F222FC34100445FEE /* Assets.xcassets */,
 				635C1421222FC34100445FEE /* LaunchScreen.storyboard */,
 				635C1424222FC34100445FEE /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635C141B222FC34000445FEE /* ViewController.swift in Sources */,
+				635C1449222FCE2300445FEE /* JournalEntry.swift in Sources */,
+				635C1447222FC58600445FEE /* JournalTableViewController.swift in Sources */,
 				635C1419222FC34000445FEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
