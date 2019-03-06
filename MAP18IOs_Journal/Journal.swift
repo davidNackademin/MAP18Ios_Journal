@@ -22,6 +22,7 @@ class Journal {
 //    }
     
     func add(entry: JournalEntry) {
+        print("add: \(entry)")
         entries.append(entry)
     }
     

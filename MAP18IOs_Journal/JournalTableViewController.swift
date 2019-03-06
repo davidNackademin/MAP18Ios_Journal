@@ -12,8 +12,8 @@ class JournalTableViewController: UITableViewController {
 
     
     let cellIdentity = "JournalEntryCell"
-    let showJournalSegueId = "showJournal"
-    let addJournalEntrySegueId = "createJournalEntry"
+    let journalEntrySegueId = "showJournal"
+    let newJournalEntrySegueId = "createJournalEntry"
     
     let journal = Journal()
     
@@ -34,6 +34,12 @@ class JournalTableViewController: UITableViewController {
             journal.add(entry: entry)
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -60,5 +66,22 @@ class JournalTableViewController: UITableViewController {
     }
     
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == journalEntrySegueId {
+          if let destination = segue.destination as? JournalEntryViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell),
+            let entry = journal.entry(index: indexPath.row) {
+                destination.journalEntry = entry
+            }
+        }
+        if segue.identifier == newJournalEntrySegueId {
+            if let destination = segue.destination as? NewJournalEntryViewController {
+                destination.journal = journal
+            }
+        }
+    }
+    
+    
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63172D82222FF01600BE7767 /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63172D81222FF01600BE7767 /* JournalEntryViewController.swift */; };
+		63172D84222FF66300BE7767 /* NewJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63172D83222FF66300BE7767 /* NewJournalEntryViewController.swift */; };
 		635C1419222FC34000445FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C1418222FC34000445FEE /* AppDelegate.swift */; };
 		635C141E222FC34000445FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C141C222FC34000445FEE /* Main.storyboard */; };
 		635C1420222FC34100445FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C141F222FC34100445FEE /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63172D81222FF01600BE7767 /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
+		63172D83222FF66300BE7767 /* NewJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntryViewController.swift; sourceTree = "<group>"; };
 		635C1415222FC34000445FEE /* MAP18IOs_Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAP18IOs_Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C1418222FC34000445FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		635C141D222FC34000445FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				635C1418222FC34000445FEE /* AppDelegate.swift */,
 				635C141C222FC34000445FEE /* Main.storyboard */,
+				63172D83222FF66300BE7767 /* NewJournalEntryViewController.swift */,
+				63172D81222FF01600BE7767 /* JournalEntryViewController.swift */,
 				635C1446222FC58600445FEE /* JournalTableViewController.swift */,
 				635C1448222FCE2300445FEE /* JournalEntry.swift */,
 				635C144A222FD7AA00445FEE /* Journal.swift */,
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				635C1449222FCE2300445FEE /* JournalEntry.swift in Sources */,
+				63172D82222FF01600BE7767 /* JournalEntryViewController.swift in Sources */,
+				63172D84222FF66300BE7767 /* NewJournalEntryViewController.swift in Sources */,
 				635C1447222FC58600445FEE /* JournalTableViewController.swift in Sources */,
 				635C1419222FC34000445FEE /* AppDelegate.swift in Sources */,
 				635C144B222FD7AA00445FEE /* Journal.swift in Sources */,
